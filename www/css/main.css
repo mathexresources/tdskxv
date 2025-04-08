@@ -1,0 +1,73 @@
+/*body {*/
+/*    background: #f8f8f2 !important;*/
+/*}*/
+
+*:not(i) {
+    font-family: "Roboto Flex", sans-serif !important;
+}
+
+
+.darken {
+    filter: brightness(0.5);
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+.btn {
+    transition: 300ms;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.tile:hover, .tile *:hover {
+    transform: scale(1) !important;
+}
+
+.asset-regular {
+    font-family: "Asset", serif;
+    font-style: normal;
+}
+
+.monoton-regular {
+    font-family: "Monoton", sans-serif !important;
+    font-style: normal !important;
+}
+
+.rubik-glitch-regular {
+    font-family: "Rubik Glitch", system-ui !important;
+    font-style: normal !important;
+}
+
+
+.roboto-flex {
+    font-family: "Roboto Flex", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-style: normal ;
+    font-variation-settings: "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712 !important;
+}
+
+.container-fade * {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeUp 0.5s ease forwards;
+}
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

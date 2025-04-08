@@ -1,0 +1,64 @@
+.image-container {
+    transition: border-color 0.3s ease-in-out;
+}
+
+.image-container:hover {
+    border: 2px solid red !important;
+}
+
+.image-container:hover .delete-icon {
+    display: block;
+}
+
+.delete-icon {
+    display: none; /* Hide by default */
+    transition: opacity 0.2s ease-in-out;
+}
+
+.image-container:hover .delete-icon {
+    display: block; /* Show on hover */
+    opacity: 1;
+}
+
+
+#dropArea {
+    transition: border-color 0.3s ease-in-out;
+}
+
+#dropArea.border-primary {
+    border-color: #007bff !important;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Image Upload Animation */
+.uploaded-photo {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.uploaded-photo.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Delete Icon Animation */
+.delete-icon {
+    transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.hover-delete-icon:hover .delete-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.delete-icon:hover {
+    color: red;
+    transform: scale(1.3);
+}

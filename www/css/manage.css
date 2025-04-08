@@ -1,0 +1,89 @@
+
+.hover-bg-primary:hover {
+    background-color: #007bff !important; /* Bootstrap primary color */
+    transform: scale(120%);
+}
+
+.album-placeholder {
+    border-style: dashed !important;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.album-placeholder:hover {
+    border-style: solid !important;
+    border-width: 3px;
+    border-color: #007bff !important; /* Modern blue accent */
+    background: rgba(0, 123, 255, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+    transform: translateY(-5px); /* Lift effect */
+}
+
+/* Glow effect */
+.album-placeholder::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(0, 123, 255, 0.2), transparent);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease-out;
+}
+
+.album-placeholder:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Icon Animation */
+.album-placeholder i {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.album-placeholder:hover i {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+/* Text Animation */
+.album-placeholder h5 {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.album-placeholder:hover h5 {
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+.deleteAlbum {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Default hover effect */
+.deleteAlbum:hover {
+    border-color: #dc3545 !important;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+}
+
+/* Flip animation */
+.deleteAlbum i {
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Red tint when switching to eye-slash */
+.deleteAlbum.deleting {
+    background: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+}
+
+/* Green tint when switching back to eye */
+.deleteAlbum.restoring {
+    background: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+    border-color: #28a745 !important;
+}

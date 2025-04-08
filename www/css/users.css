@@ -1,0 +1,6 @@
+.hover-text-primary:hover {
+    color: #007bff !important; /* Bootstrap primary color */
+}
+.text-danger-hover:hover {
+    color: #dc3545 !important; /* Bootstrap danger color */
+}
