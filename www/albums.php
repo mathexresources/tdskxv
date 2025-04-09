@@ -32,7 +32,7 @@
                             <span><i class="fas fa-calendar-alt me-1"></i><?= $album->getCreatedHumanReadable() ?></span>
                         </div>
 
-                        <p class="card-text mt-auto"><?= htmlspecialchars($album->getDescription()) ?></p>
+                        <p class="card-text mt-auto"><?= $album->getDescription() ?></p>
                     </div>
                 </div>
             </div>

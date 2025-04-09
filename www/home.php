@@ -37,7 +37,7 @@ $images = array_slice($validImages, 0, 9); // Always max 9 images
 ?>
 
 
-<div class="swiper mySwiper">
+<div class="swiper mySwiper-desktop shadow d-none d-lg-block d-xl-block d-xxl-block">
     <div class="swiper-wrapper">
         <?php foreach ($images as $image): ?>
             <div class="swiper-slide">
@@ -48,9 +48,20 @@ $images = array_slice($validImages, 0, 9); // Always max 9 images
     <div class="swiper-gradient-overlay"></div>
 </div>
 
+<div class="swiper mySwiper-mobile dark-effect shadow d-lg-none d-xl-none d-xxl-none">
+    <div class="swiper-wrapper">
+        <?php foreach ($images as $image): ?>
+            <div class="swiper-slide">
+                <img src="<?= $image ?>" loading="lazy"  style="object-fit: cover; height: 50vh">
+            </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="swiper-gradient-overlay"></div>
+</div>
+
 <div class="container container-fade mt-5" style="min-width: 90vw">
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-6">
             <h1 class="asset-regular"><?= $CONF_TITLE ?></h1>
             <h4>Hi, I’m Tadeáš, also known as TDSKXV. I’m a graphic artist who works with programs like Adobe Photoshop, Illustrator, and Blender. I enjoy creating 3D designs, posters, and I also like exploring new projects with new techniques.</h4>
             <h4><a href="/about" class="">Learn more</a></h4>
@@ -100,6 +111,13 @@ $images = array_slice($validImages, 0, 9); // Always max 9 images
         <?php } ?>
     </div>
     <hr class="mt-5">
-    <h1 class="display-5 fw-bold mb-4">Sleduj mě</h1>
+    <h1 class="display-5 fw-bold">Sleduj mě</h1>
+    <div class="d-flex gap-3">
+        <div class="d-flex justify-content-center align-items-center border" style="height: 25vh; width: 25vh;" onclick="window.location.href = ('https://www.instagram.com/tdskxvdesign/')">
+            <div class="text-center">
+                <i class="fa-brands mx-auto text-center fa-instagram fa-6x"></i>
+                <p class="text-muted mx-auto text-center">@tdskxvdesign</p>
+            </div>
+        </div>
     <hr>
 </div>
