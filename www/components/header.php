@@ -25,7 +25,7 @@ if (isset($CONF_NO_HEADER_PAGES) && in_array($page, $CONF_NO_HEADER_PAGES)) {
                 $nav = [
                     '' => 'Domů',
                     'albums' => 'Alba',
-                    'about' => 'Kdo jsem',
+                    'about-me' => 'Kdo jsem',
                 ];
                 if (!empty($_SESSION['admin'])) {
                     $nav['admin'] = 'Administrace';

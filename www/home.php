@@ -41,7 +41,7 @@ $images = array_slice($validImages, 0, 9); // Always max 9 images
     <div class="swiper-wrapper">
         <?php foreach ($images as $image): ?>
             <div class="swiper-slide">
-                <img src="<?= $image ?>" loading="lazy" width="600" height="1080" style="object-fit: cover;">
+                <img src="<?= $image ?>" loading="lazy" width="600" height="1080" style="object-fit: cover;" alt="Swipper image">
             </div>
         <?php endforeach; ?>
     </div>
@@ -52,7 +52,7 @@ $images = array_slice($validImages, 0, 9); // Always max 9 images
     <div class="swiper-wrapper">
         <?php foreach ($images as $image): ?>
             <div class="swiper-slide">
-                <img src="<?= $image ?>" loading="lazy"  style="object-fit: cover; height: 50vh">
+                <img src="<?= $image ?>" loading="lazy"  style="object-fit: cover; height: 50vh" alt="Swipper image">
             </div>
         <?php endforeach; ?>
     </div>
@@ -63,12 +63,12 @@ $images = array_slice($validImages, 0, 9); // Always max 9 images
     <div class="row">
         <div class="col-12 col-md-6">
             <h1 class="asset-regular"><?= $CONF_TITLE ?></h1>
-            <h4>Hi, I’m Tadeáš, also known as TDSKXV. I’m a graphic artist who works with programs like Adobe Photoshop, Illustrator, and Blender. I enjoy creating 3D designs, posters, and I also like exploring new projects with new techniques.</h4>
-            <h4><a href="/about" class="">Learn more</a></h4>
+            <p class="fs-4">Hi, I’m Tadeáš, also known as TDSKXV. I’m a graphic artist who works with programs like Adobe Photoshop, Illustrator, and Blender. I enjoy creating 3D designs, posters, and I also like exploring new projects with new techniques.</p>
+            <p class="fs-4"><a href="/about-me" class="">Learn more</a></p>
         </div>
     </div>
     <hr>
-    <h1 class="display-5 fw-bold">Poslední Alba</h1>
+    <h2 class="fs-1">Poslední Alba</h2>
     <a href="albums" class="btn btn-link">Všechna alba <i class="fa fa-arrow-right"></i></a>
     <hr class="mb-5">
 
@@ -92,10 +92,10 @@ $images = array_slice($validImages, 0, 9); // Always max 9 images
                 </span>
 
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title fw-bold"><?= htmlspecialchars($album->getName()) ?></h5>
+                        <p class="fs-4 card-title fw-bold"><?= htmlspecialchars($album->getName()) ?></p>
 
                         <?php if ($album->getLocation() != ''): ?>
-                            <h6 class="card-subtitle text-muted mb-2"><?= htmlspecialchars($album->getLocation()) ?></h6>
+                            <p class="fs-6 card-subtitle text-muted mb-2"><?= htmlspecialchars($album->getLocation()) ?></p>
                         <?php endif; ?>
 
                         <!-- Author and date -->
@@ -111,7 +111,7 @@ $images = array_slice($validImages, 0, 9); // Always max 9 images
         <?php } ?>
     </div>
     <hr class="mt-5">
-    <h1 class="display-5 fw-bold">Sleduj mě</h1>
+    <h2 class="fs-1">Sleduj mě</h2>
     <div class="d-flex gap-3">
         <div class="d-flex justify-content-center align-items-center border" style="height: 25vh; width: 25vh;" onclick="window.location.href = ('https://www.instagram.com/tdskxvdesign/')">
             <div class="text-center">

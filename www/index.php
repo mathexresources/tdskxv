@@ -15,7 +15,7 @@ if ($page == '') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/dataTables.dataTables.min.css" rel="stylesheet">
@@ -51,7 +51,7 @@ if ($page == '') {
     <meta property="og:description" content="Hi, I’m Tadeáš, also known as TDSKXV. I’m a graphic artist who works with programs like Adobe Photoshop, Illustrator, and Blender. I enjoy creating 3D designs, posters, and I also like exploring new projects with new techniques."/>
     <meta property="og:url" content="https://tdskxv.cz"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://tdskxv.cz/img/about/1.webp"/>
+    <meta property="og:image" content="https://tdskxv.cz/img/about-me/1.webp"/>
 </head>
 <body>
 <?php
@@ -79,7 +79,7 @@ if (file_exists($page . '.php')) {
         "@type": "Organization",
         "name": "TDSKXV",
         "url": "https://tdskxv.cz",
-        "logo": "https://tdskxv.cz/img/about/1.webp"
+        "logo": "https://tdskxv.cz/img/about-me/1.webp"
     }
 </script>
 
