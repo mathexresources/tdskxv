@@ -27,9 +27,9 @@ if ($page == '') {
     <script src="trumbowyg/dist/trumbowyg.min.js"></script>
     <script src="/js/dataTables.min.js"></script>
     <meta name="description"
-          content="WebSafe je inovativní studentský projekt, jehož cílem je zvýšit povědomí o kybernetické bezpečnosti a zároveň zpříjemnit vzdělávání v této oblasti. ">
+          content="Hi, I’m Tadeáš, also known as TDSKXV. I’m a graphic artist who works with programs like Adobe Photoshop, Illustrator, and Blender. I enjoy creating 3D designs, posters, and I also like exploring new projects with new techniques.">
     <meta name="keywords"
-          content="Websafe, vzdělávání, přednášky, kyberbezpečnost, socialní sítě, phishing, prezentace, školy, škola">
+          content="Tadeáš, TDSKXV, graphic, artist, Adobe, Photoshop, Illustrator, Blender, 3D, designs, posters, creative, projects, new techniques, digital art, design, software">
     <link rel="shortcut icon" href="/img/logo/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/e8daec485b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -47,9 +47,8 @@ if ($page == '') {
     }
     ?>
     <title><?= $CONF_TITLE ?></title>
-    <meta property="og:title" content="WebSafe"/>
-    <meta property="og:description"
-          content="TDSKXV"/>
+    <meta property="og:title" content="TDSKXV"/>
+    <meta property="og:description" content="Hi, I’m Tadeáš, also known as TDSKXV. I’m a graphic artist who works with programs like Adobe Photoshop, Illustrator, and Blender. I enjoy creating 3D designs, posters, and I also like exploring new projects with new techniques."/>
     <meta property="og:url" content="https://tdskxv.cz"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://tdskxv.cz/img/about/1.webp"/>

@@ -74,7 +74,8 @@ outputStorageDiv.appendChild(storageProgressWrapper);
 
 $(document).ready(function () {
     const inner = `
-        <div class="alert alert-info" role="alert">Změna hostingu webu z vývojového prostředí na platformu Hukot.cz</div>`
+        <div class="alert alert-info" role="alert">Změna hostingu webu z vývojového prostředí na platformu Hukot.cz</div>
+        <div class="alert alert-info" role="alert">Responzivita a SSL certifikát (HTTPS)</div>`;
     $('#last-update').after(inner);
     $('#hukot-status').closest('button').attr({
         'data-bs-toggle': 'modal',
