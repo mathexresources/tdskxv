@@ -2,7 +2,7 @@
     <div class="row mb-4 mb-md-5">
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-10 col-xxl-8">
-                <img class="img-fluid rounded shadow" loading="lazy" src="/img/about-me/1.webp" alt="Profile pic">
+                <img class="img-fluid rounded shadow" loading="lazy" src="/img/about-me/tdskxv.jpg" alt="Profile pic">
 
             </div>
         </div>

@@ -32,12 +32,15 @@ if (isset($CONF_NO_HEADER_PAGES) && in_array($page, $CONF_NO_HEADER_PAGES)) {
                 }
 
                 foreach ($nav as $key => $value) {
-                    $activeClass = ($key === $fePage) ? 'link-secondary fw-bold' : 'text-black';
+                    $activeClass = ($key === $fePage) ? 'link-secondary fw-bold' : 'text-body';
                     echo '<li class="nav-item">
                         <a href="/' . $key . '" class="nav-link px-2 ' . $activeClass . '">' . $value . '</a>
                     </li>';
                 }
                 ?>
+                <li class="nav-item">
+                    <button class="themeToggle btn"><i class="fa"></i></button>
+                </li>
             </ul>
         </div>
     </div>

@@ -80,3 +80,9 @@
     height: 100%;
 }
 
+@media screen and (max-width: 398px) {
+    .navbar-toggler {
+        text-align: end !important;
+    }
+
+}

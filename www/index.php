@@ -11,7 +11,7 @@ if ($page == '') {
 }
 ?>
 <!doctype html>
-<html lang="cs">
+<html lang="cs" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -73,6 +73,7 @@ if (file_exists($page . '.php')) {
     require_once '404.php';
 ?>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/main.js"></script>
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",
